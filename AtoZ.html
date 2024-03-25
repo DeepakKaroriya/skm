@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I</title>
+    <!-- <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" /> -->
+    <!-- Fonts and icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!--CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<!--  -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css" />
+<link rel="stylesheet" href="css/style2.css">
+<!-- j query -->
+<script src="https://code.jquery.com/jquery-3.7.1.slim.js"
+    integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <input type="checkbox" id="nav-toggle">
+        <div class="sidebar">
+            <div class="sidebar-brand">
+                <div class="logo-header">
+                    <div class="logo1">
+                        <img src="img/newl.png" alt="logo1">
+                        <!-- <img src="img/logo1.png" alt="logo1"> -->
+                    </div>
+                    <div class="logo2">
+                        <!-- <img class="logo-text" src="img/logo2.png" alt="logo2">
+                        <h4 class="logo-text">INVENTORY</h4> -->
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar-menu -->
+            <!-- <div class="sidebar-menu">
+                <div class="container-fluid ">
+                    <div class="row flex-nowrap">
+                        <div
+                            class=" col-auto col-md-4 col-lg-12 min-vh-100 d-flex flex-column  justify-content-between">
+                            <div class="p-2">
+                                <ul class="nav nav-pills flex-column mt-4">
+
+                                    <li class="nav-item py-3 py-sm-2 ">
+                                        <a href="..//dashboard.html" class="nav-link ">
+                                            <i class="fs-5 text-secondary fa-solid fa-house"></i><span
+                                                class="fs-7  ms-4 d-none d-sm-inline text-secondary">Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-3 py-sm-2">
+                                        <a href="..//inventory.html" class="nav-link">
+                                            <i class="fs-5 text-secondary fa-solid fa-book"></i>
+                                            <span class="fs-7  ms-4 d-sm-inline text-secondary">Inventory</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-3 py-sm-2">
+                                        <a href="..//Invoice.html" class="nav-link ">
+                                            <i class=" fs-5 text-secondary fa-solid fa-file"></i>
+                                            <span class="fs-7  ms-4 d-none d-sm-inline text-secondary">Invoice</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-3 py-sm-2">
+                                        <a href="" class="nav-link">
+                                            <i class="fs-7 text-secondary fa-solid fa-user"></i>
+                                            <span
+                                                class="fs-7 text-bold text-secondary ms-4 d-none d-sm-inline">Customer</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-3 py-sm-2">
+                                        <a href="" class="nav-link">
+                                            <i class="fs-5 text-secondary fa-solid fa-database"></i>
+                                            <span
+                                                class="fs-6 text-bold text-secondary ms-4 d-none d-sm-inline">Income</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-3 py-sm-2">
+                                        <a href="..//Expense.html" class="nav-link">
+                                            <i class="fs-5 text-secondary fa-solid fa-layer-group"></i>
+                                            <span
+                                                class="fs-6 text-bold text-secondary ms-4 d-none d-sm-inline">Expense</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-3 py-sm-2">
+                                        <a href="..//profile.html" class="nav-link">
+                                            <i class="fs-5 text-secondary fa-solid fa-gear"></i>
+                                            <span
+                                                class="fs-6 text-bold text-secondary ms-4 d-none d-sm-inline">Setting</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                                <hr>
+                                <footer>
+                                    <ul class="nav nav-pills flex-column mt-4">
+                                        <li class="nav-item py-3 py-sm-2">
+                                            <a href="..//help&support.html" class="nav-link">
+                                                <i class="fs-5 text-secondary fa-solid fa-handshake"></i>
+                                                <span class="fs-6 text-bold text-secondary ms-4 d-none d-sm-inline">Help
+                                                    &
+                                                    Support</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item py-3 py-sm-2">
+                                            <a href="" class="nav-link">
+                                                <i class="fs-5 text-secondary fa-solid fa-right-to-bracket"></i>
+                                                <span class="fs-6 text-bold text-secondary ms-4 d-none d-sm-inline">Sign
+                                                    Out</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> -->
+            <div class="sidebar-menu">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-4 col-lg-12 min-vh-100 d-flex flex-column justify-content-between">
+                            <div class="p-2">
+                                <ul class="nav nav-pills flex-column mt-4">
+                                    <li class="nav-item py-3 py-sm-2">
+                                        <a href="..//dashboard.html" class="nav-link">
+                                            <i class="fs-5 text-secondary fa-solid fa-house"></i>
+                                            <span class="fs-7 ms-4 d-none d-sm-inline text-secondary">Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-3 py-sm-2">
+                                        <a href="..//inventory.html" class="nav-link">
+                                            <i class="fs-5 text-secondary fa-solid fa-book"></i>
+                                            <span class="fs-7 ms-4 d-sm-inline text-secondary">Inventory</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-3 py-sm-2">
+                                        <a href="..//Invoice.html" class="nav-link">
+                                            <i class="fs-5 text-secondary fa-solid fa-file"></i>
+                                            <span class="fs-7 ms-4 d-none d-sm-inline text-secondary">Invoice</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-3 py-sm-2">
+                                        <a href="" class="nav-link">
+                                            <i class="fs-7 text-secondary fa-solid fa-user"></i>
+                                            <span class="fs-7 text-bold text-secondary ms-4 d-none d-sm-inline">Customer</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-3 py-sm-2">
+                                        <a href="" class="nav-link">
+                                            <i class="fs-5 text-secondary fa-solid fa-database"></i>
+                                            <span class="fs-6 text-bold text-secondary ms-4 d-none d-sm-inline">Income</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-3 py-sm-2">
+                                        <a href="..//Expense.html" class="nav-link">
+                                            <i class="fs-5 text-secondary fa-solid fa-layer-group"></i>
+                                            <span class="fs-6 text-bold text-secondary ms-4 d-none d-sm-inline">Expense</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-3 py-sm-2">
+                                        <a href="..//profile.html" class="nav-link">
+                                            <i class="fs-5 text-secondary fa-solid fa-gear"></i>
+                                            <span class="fs-6 text-bold text-secondary ms-4 d-none d-sm-inline">Setting</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <hr>
+                                <footer>
+                                    <ul class="nav nav-pills flex-column mt-4">
+                                        <li class="nav-item py-3 py-sm-2">
+                                            <a href="..//help&support.html" class="nav-link">
+                                                <i class="fs-5 text-secondary fa-solid fa-handshake"></i>
+                                                <span class="fs-6 text-bold text-secondary ms-4 d-none d-sm-inline">Help & Support</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item py-3 py-sm-2">
+                                            <a href="" class="nav-link">
+                                                <i class="fs-5 text-secondary fa-solid fa-right-to-bracket"></i>
+                                                <span class="fs-6 text-bold text-secondary ms-4 d-none d-sm-inline">Sign Out</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+        <!-- main content -->
+        <div class="main-content">
+            <!-- <div class="navbar-container">
+                <nav class="navbar navbar-light bg-light">
+                    <div class="container-fluid">
+                        <h2>
+                            <label for="nav-toggle">
+                                <span class="las la-bars"></span>
+                            </label>
+                        </h2>
+                        <div class="d-flex px-4">
+                            <div class="  col px-4 d-flex">
+                                <div class="p-2 border rounded-pill px-md-3">
+                                    <span class="Wallet">Wallet Balance: </span> <span class="Balance">₹100.00</span>
+                                    <button class="btn btn-outline-secondary btn-sm" type="button"
+                                        id="button-addon2">+ADD</button>
+                                </div>
+                            </div>
+                            <li class="nav-item dropdown hidden-caret top-user-profile"> <a
+                                    class="dropdown-toggle profile-pic navbar-brand" data-toggle="dropdown" href="#"
+                                    aria-expanded="false">
+                                    <p><small>Welcome</small>Deepak Karoriya</p>
+                                    <img src="img/profile.png" alt="Avatar Logo" class="rounded-circle">
+                                </a>
+                                <ul class="dropdown-menu dropdown-user animated fadeIn">
+                                    <div class="dropdown-user-scroll scrollbar-outer">
+                                        <li>
+                                            <div class="user-box">
+                                                <div class="u-text">
+                                                    <h4>Deepak Karoriya</h4>
+                                                    <p class="text-muted">deepakkaroriya@gmail.com.com</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="..//profile.html">My Profile</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Logout</a>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+                </nav>
+            </div> -->
+            <div class="navbar-container">
+                <nav class="navbar navbar-light bg-light">
+                    <div class="container-fluid">
+                        <h2>
+                            <label for="nav-toggle">
+                                <span class="las la-bars"></span>
+                            </label>
+                        </h2>
+                        <div class="d-flex flex-column flex-md-row justify-content-between px-4">
+                            <div class="col px-4 mb-3 mb-md-0">
+                                <div class="p-2 border rounded-pill px-md-3">
+                                    <span class="Wallet">Wallet Balance: </span> <span class="Balance">₹100.00</span>
+                                    <button class="btn btn-outline-secondary btn-sm" type="button" id="button-addon2">+ADD</button>
+                                </div>
+                            </div>
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item dropdown hidden-caret top-user-profile">
+                                    <a class="dropdown-toggle profile-pic navbar-brand" data-toggle="dropdown" href="#" aria-expanded="false">
+                                        <!-- <span class="caret"></span> -->
+                                        <p><small>Welcome</small>Deepak Karoriya</p>
+                                        <img src="img/profile.png" alt="Avatar Logo" class="rounded-circle">
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user animated fadeIn">
+                                        <div class="dropdown-user-scroll scrollbar-outer">
+                                            <li>
+                                                <div class="user-box">
+                                                    <div class="u-text">
+                                                        <h4>Deepak Karoriya</h4>
+                                                        <p class="text-muted">deepakkaroriya@gmail.com.com</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="..//profile.html">My Profile</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Logout</a>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            
+            <!-- main contect -->
+            <!-- <div class="page-inner">
+                <div class="card-inventory">
+                    <div class="card-body p-3">
+                        <ul class="row col-lg-12 mb-0 flex-row">
+                            <li class=" col-1 mb-2">
+                                <div class=" rounded-circle d-flex flex-column align-items-center bg-primary">
+
+                                    <h1 class="fs-7 font-weight-bolder text-center mt-2 text-capitalize text-dark">A</h1>
+                                </div>
+                            </li>
+                            <li class=" col-1">
+                                <div class=" rounded-circle d-flex flex-column align-items-center bg-primary">
+
+                                    <h1 class="fs-7 font-weight-bolder text-center mt-2 text-capitalize text-dark">B</h1>
+                                </div>
+                            </li>
+                            <li class=" col-1">
+                                <div class=" rounded-circle d-flex flex-column align-items-center bg-primary">
+
+                                    <h1 class="fs-7 font-weight-bolder text-center mt-2 text-capitalize text-dark">C</h1>
+                                </div>
+                            </li>
+                            <li class=" col-1">
+                                <div class=" rounded-circle d-flex flex-column align-items-center bg-primary">
+
+                                    <h1 class="fs-7 font-weight-bolder text-center mt-2 text-capitalize text-dark">D</h1>
+                                </div>
+                            </li>
+                            <li class=" col-1">
+                                <div class=" rounded-circle d-flex flex-column align-items-center bg-primary">
+
+                                    <h1 class="fs-7 font-weight-bolder text-center mt-2 text-capitalize text-dark">E</h1>
+                                </div>
+                            </li>
+                            <li class=" col-1">
+                                <div class=" rounded-circle d-flex flex-column align-items-center bg-primary">
+
+                                    <h1 class="fs-7 font-weight-bolder text-center mt-2 text-capitalize text-dark">F</h1>
+                                </div>
+                            </li>
+                            <li class=" col-1">
+                                <div class=" rounded-circle d-flex flex-column align-items-center bg-primary">
+
+                                    <h1 class="fs-7 font-weight-bolder text-center mt-2 text-capitalize text-dark">G</h1>
+                                </div>
+                            </li>
+                            <li class=" col-1">
+                                <div class=" rounded-circle d-flex flex-column align-items-center bg-primary">
+
+                                    <h1 class="fs-7 font-weight-bolder text-center mt-2 text-capitalize text-dark">H</h1>
+                                </div>
+                            </li>
+                            <li class=" col-1">
+                                <div class=" rounded-circle d-flex flex-column align-items-center bg-primary">
+
+                                    <h1 class="fs-7 font-weight-bolder text-center mt-2 text-capitalize text-dark">I</h1>
+                                </div>
+                            </li>
+                            <li class=" col-1">
+                                <div class=" rounded-circle d-flex flex-column align-items-center bg-primary">
+
+                                    <h1 class="fs-7 font-weight-bolder text-center mt-2 text-capitalize text-dark">J</h1>
+                                </div>
+                            </li>
+                            <li class=" col-1">
+                                <div class=" rounded-circle d-flex flex-column align-items-center bg-primary">
+
+                                    <h1 class="fs-7 font-weight-bolder text-center mt-2 text-capitalize text-dark">K</h1>
+                                </div>
+                            </li>
+                            <li class=" col-1">
+                                <div class=" rounded-circle d-flex flex-column align-items-center bg-primary">
+
+                                    <h1 class="fs-7 font-weight-bolder text-center mt-2 text-capitalize text-dark">L</h1>
+                                </div>
+                            </li>
+                            <li class=" col-1 mb-2">
+                                <div class=" rounded-circle d-flex flex-column align-items-center bg-primary">
+
+                                    <h1 class="fs-7 font-weight-bolder text-center mt-2 text-capitalize text-dark">M</h1>
+                                </div>
+                            </li>
+                            <li class=" col-1">
+                                <div class=" rounded-circle d-flex flex-column align-items-center bg-primary">
+
+                                    <h1 class="fs-7 font-weight-bolder text-center mt-2 text-capitalize text-dark">N</h1>
+                                </div>
+                            </li>
+                            <li class=" col-1">
+                                <div class=" rounded-circle d-flex flex-column align-items-center bg-primary">
+
+                                    <h1 class="fs-7 font-weight-bolder text-center mt-2 text-capitalize text-dark">O</h1>
+                                </div>
+                            </li>
+                            <li class=" col-1">
+                                <div class=" rounded-circle d-flex flex-column align-items-center bg-primary">
+
+                                    <h1 class="fs-7 font-weight-bolder text-center mt-2 text-capitalize text-dark">P</h1>
+                                </div>
+                            </li>
+                            <li class=" col-1">
+                                <div class=" rounded-circle d-flex flex-column align-items-center bg-primary">
+
+                                    <h1 class="fs-7 font-weight-bolder text-center mt-2 text-capitalize text-dark">Q</h1>
+                                </div>
+                            </li>
+                            <li class=" col-1">
+                                <div class=" rounded-circle d-flex flex-column align-items-center bg-primary">
+
+                                    <h1 class="fs-7 font-weight-bolder text-center mt-2 text-capitalize text-dark">R</h1>
+                                </div>
+                            </li>
+                            <li class=" col-1">
+                                <div class=" rounded-circle d-flex flex-column align-items-center bg-primary">
+
+                                    <h1 class="fs-7 font-weight-bolder text-center mt-2 text-capitalize text-dark">S</h1>
+                                </div>
+                            </li>
+                            <li class=" col-1">
+                                <div class=" rounded-circle d-flex flex-column align-items-center bg-primary">
+
+                                    <h1 class="fs-7 font-weight-bolder text-center mt-2 text-capitalize text-dark">T</h1>
+                                </div>
+                            </li>
+                            <li class=" col-1">
+                                <div class=" rounded-circle d-flex flex-column align-items-center bg-primary">
+
+                                    <h1 class="fs-7 font-weight-bolder text-center mt-2 text-capitalize text-dark">U</h1>
+                                </div>
+                            </li>
+                            <li class=" col-1">
+                                <div class=" rounded-circle d-flex flex-column align-items-center bg-primary">
+
+                                    <h1 class="fs-7 font-weight-bolder text-center mt-2 text-capitalize text-dark">V</h1>
+                                </div>
+                            </li>
+                            <li class=" col-1">
+                                <div class=" rounded-circle d-flex flex-column align-items-center bg-primary">
+
+                                    <h1 class="fs-7 font-weight-bolder text-center mt-2 text-capitalize text-dark">W</h1>
+                                </div>
+                            </li>
+                            <li class=" col-1">
+                                <div class=" rounded-circle d-flex flex-column align-items-center bg-primary">
+
+                                    <h1 class="fs-7 font-weight-bolder text-center mt-2 text-capitalize text-dark">X</h1>
+                                </div>
+                            </li>
+                            <li class=" col-1 ">
+                                <div class=" rounded-circle d-flex flex-column align-items-center bg-primary">
+
+                                    <h1 class="fs-7 font-weight-bolder text-center mt-2 text-capitalize text-dark">Y</h1>
+                                </div>
+                            </li>
+                            <li class=" col-1">
+                                <div class=" rounded-circle d-flex flex-column align-items-center bg-primary">
+
+                                    <h1 class="fs-7 font-weight-bolder text-center mt-2 text-capitalize text-dark">Z</h1>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+            <div class="page-inner">
+                <div class="card-inventory">
+                    <!-- <section class="section dashboard"> -->
+                        <div class="card-body p-3">
+                            <div class="row">
+                                <!-- Left side columns -->
+                                <div class="col-lg-7">
+                                    <div class="row">
+                                        <div class="col-lg-12 mb-lg-0">
+                                            <div class="card p-3 pt-0 d-flex border-0">
+                                                <div class="p-0 card-header justify-content-between bg-white">
+                                                    <h5 class="card-title">Overview</h5>
+                                                    <div class="dropdown show ml-auto">
+                                                        <a class="text-reset dropdown-toggle text-decoration-none" href="#" role="button"
+                                                            id="Report" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <span class="text-muted">All Time</span>
+                                                        </a>
+                                                        <div class="dropdown-menu" aria-labelledby="Report">
+                                                            <a class="dropdown-item" href="#">Today</a>
+                                                            <a class="dropdown-item" href="#">This Month</a>
+                                                            <a class="dropdown-item" href="#">This Year</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card p-2">
+                                                    <div class="row row-cols-1 row-cols-md-2">
+                                                        <div class="col mb-4">
+                                                            <div class="card-box1">
+                                                                <div class="card-body p-3">
+                                                                    <!-- Content for Income -->
+                                                                    <div class="row ">
+                                                                        <div class="col-8 text-start">
+                                                                            <div class="numbers">
+                                                                                <p
+                                                                                    class="textsm mb-0 font-weight-bold text-start text-white">
+                                                                                    Income</p>
+                                                                                <h5
+                                                                                    class="font-weight-bolder text-start text-white">
+                                                                                    ₹53,000
+                                                                                </h5>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-4 text-center">
+                                                                            <div
+                                                                                class="icon icon-shape bg-gradient-primary shadow-primary rounded-circle">
+                                                                                <i class="fa-solid fa-arrow-trend-up text-center"
+                                                                                    style="color: #B4FFDB;"></i>
+                                                                                <p class="mb-0">
+                                                                                    <span
+                                                                                        class="text text-sm font-weight-bolder text-white">+55%</span>
+
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col mb-4">
+                                                            <div class="card-box1" style="background-color: white;">
+                                                                <div class="card-body p-3">
+                                                                    <!-- Content for Expense -->
+                                                                    <div class="row ">
+                                                                        <div class="col-8">
+                                                                            <div class="numbers">
+                                                                                <p
+                                                                                    class="text-sm mb-0 font-weight-bold text-start text-white">
+                                                                                    Expense</p>
+                                                                                <h5
+                                                                                    class="font-weight-bolder text-start text-white ">
+                                                                                    ₹53,000
+                                                                                </h5>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-4 text-end">
+                                                                            <div
+                                                                                class="icon icon-shape bg-gradient-primary shadow-primary text-center rounded-circle">
+                                                                                <i class="fa-solid fa-arrow-trend-down"
+                                                                                    style="color: red;"></i>
+                                                                                <p class="mb-0">
+                                                                                    <span
+                                                                                        class="text-dark text-sm font-weight-bolder text-white">+55%</span>
+
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-2">
+                                                    <div class="col-lg-12">
+                                                        <div class="card border-0">
+                                                            <div class="p-0 card-header d-flex bg-white justify-content-between">
+                                                                <h5 class="card-title">New Order</h5>
+                                                                <button type="button" class="nb btn btn-light btn-sm">See All</button>
+                                                            </div>
+                                                            <div class="card-body d-flex card-notification">
+                                                                <div class="row">
+                                                                    <div class="col-md-8">
+                                                                        <div class="numbers px-2">
+                                                                            <!-- Content for New Order -->
+                                                                            <i class="fa-solid fa-crown text-white">
+                                                                                <small class="fs-6 text-white text-capitalize fw-light">Unloack all
+                                                                                    features</small></i>
+
+                                                                            <h4 class="text-white text-sm">Primium Membership
+                                                                            </h4>
+                                                                            <p
+                                                                                class="textsm fs-6 mb-0 text-start text-white">
+                                                                                We will Working on your sales. 
+                                                                                Your New Sales order will appear here.   </p>
+                                                                            <button
+                                                                                class="btn btn-outline-danger btn-sm"
+                                                                                type="button" id="button-addon2">Upgrade
+                                                                                Now</button>
+                                                                            <button
+                                                                                class="btn btn-outline-danger btn-sm"
+                                                                                type="button" id="button-addon2">Learn
+                                                                                More</button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <img class="not-img" src="img/nimg.png" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 mb-lg-0 mb-4 mt-4">
+                                            <div class="card border-0">
+                                                <div class="px-2 card-header d-flex bg-white justify-content-between">
+                                                    <h5 class="card-title">Customer</h5>
+                                                    <button type="button" class="nb btn btn-light btn-sm">See All</button>
+                                                </div>
+                                                <ul class="row col-lg-12 mb-0">
+                                                    <!-- Content for Customers -->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Right side columns -->
+                                <div class="col-lg-5 mb-lg-0 mb-4">
+                                    <div class="card border-0  z-index-2">
+                                        <div class="p-0 card-header justify-content-between bg-white">
+                                            <div class="card-head-row px-2">
+                                                <h5 class="card-title">Statistic</h5>
+                                                <div class="dropdown show ml-auto">
+                                                    <a class="text-reset dropdown-toggle text-decoration-none " href="#"
+                                                        role="button" id="Report" data-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        <span class="text-muted">All Time</span>
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="Report">
+                                                        <a class="dropdown-item" href="#">Today</a>
+                                                        <a class="dropdown-item" href="#">This Month</a>
+                                                        <a class="dropdown-item" href="#">This Year</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-3">
+                                            <div class="chart-container">
+                                                <canvas id="multipleBarChart"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card border-0 pt-0 mt-4">
+                                        <div class="card-header justify-content-between bg-white">
+                                            <div class="card-head-row px-0">
+                                                <h5 class="card-title">Populer Product</h5>
+                                                <div class="dropdown show ml-auto">
+                                                    <a class="text-reset dropdown-toggle text-decoration-none " href="#"
+                                                        role="button" id="Report" data-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        <span class="text-muted">All Time</span>
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="Report">
+                                                        <a class="dropdown-item" href="#">Today</a>
+                                                        <a class="dropdown-item" href="#">This Month</a>
+                                                        <a class="dropdown-item" href="#">This Year</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-responsive p-4">
+                                            <table class="table mb-0">
+                                                <thead>
+                                                    <tr class="text-center">
+                                                        <th>S. No</th>
+                                                        <th>Product Name</th>
+                                                        <th>Quantity</th>
+                                                        <th>Selling Price</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="text-center">
+                                                 
+                                                    <tr>
+                                                         <td class="text-bold rounded-circle "><img class="table-img" src="img/a.png"
+                                                                alt="S"></td> 
+                                                        <td>Mobile</td>
+                                                        <td>50</td>
+                                                        <td>15,000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-bold"><img class="table-img" src="img/b.png"
+                                                                alt="S"></td>
+                                                        <td>Mobile</td>
+                                                        <td>50</td>
+                                                        <td>15,000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-bold"><img class="table-img" src="img/c.png"
+                                                                alt="S"></td>
+                                                        <td>Mobile</td>
+                                                        <td>50</td>
+                                                        <td>15,000</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="text-bold"><img class="table-img" src="img/d.png"
+                                                                alt="S"></td>
+                                                        <td>Mobile</td>
+                                                        <td>50</td>
+                                                        <td>15,000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-bold"><img class="table-img" src="img/e.png"
+                                                                alt="S"></td>
+
+                                                        <td>Mobile</td>
+                                                        <td>50</td>
+                                                        <td>15,000</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                    </section>
+                </div>
+            </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <div class="copyright">
+            &copy; Copyright <strong><span>SkygenesysTechnologyPrivate Limited</span></strong>. All Rights Reserved
+        </div>
+
+    </footer><!-- End Footer -->
+    <!-- Bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!--  table-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
